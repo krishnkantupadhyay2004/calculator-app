@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="model">
+            <div class="inputdiv"><p class = "inputtext">0</p></div>
+            <div class="outputdiv"><p class = "outputtext">0</p></div>
+            <div class="buttons">
+                <div id="rowone" class = "rows" >
+                    <button class = "numberbutton" id = "btn1" onclick="addnumber(1)">1</button>
+                    <button class = "numberbutton" id = "btn2"  onclick="addnumber(2)">2</button>
+                    <button class = "numberbutton" id = "btn3"  onclick="addnumber(3)">3</button>
+                    <button id = "btn+"  onclick="addnumber('+')" class = "signbtn">+</button>
+                </div>
+                <div id="rowtwo" class = "rows">
+                    <button class = "numberbutton" id = "btn4"  onclick="addnumber(4)">4</button>
+                    <button class = "numberbutton" id = "btn5"  onclick="addnumber(5)">5</button>
+                    <button class = "numberbutton" id = "btn6"  onclick="addnumber(6)">6</button>
+                    <button id = "btn-" class = "signbtn"  onclick="addnumber('-')">-</button>
+                </div>
+                <div id="rowthree" class = "rows">
+                    <button class = "numberbutton" id = "btn7"  onclick="addnumber(7)">7</button>
+                    <button class = "numberbutton" id = "btn8"  onclick="addnumber(8)">8</button>
+                    <button class = "numberbutton" id = "btn9"  onclick="addnumber(9)">9</button>
+                    <button id = "btn*" class = "signbtn"  onclick="addnumber('*')">&times;</button>
+                </div>
+                <div id="rowfour" class = "rows">
+                      <button class = "numberbutton" id = "btn00"  onclick="addnumber('00')">00</button>
+                    <button class = "numberbutton" id = "btn0"  onclick="addnumber('0')">0</button>
+                    <button class = "numberbutton" id = "btn."  onclick="addnumber('.')">.</button>
+                    <button id = "btn/" class = "signbtn"  onclick="addnumber('/')">/</button>
+                </div>
+                <div id="rowfive" class = "rows">
+                      <button class = "numberbutton" onclick = "changemode()" id = "btni"><i class="fa-solid fa-moon moonicon"></i><i id = "bright" class="material-icons" >light_mode</i></button>
+                    <button class = "numberbutton" id = "btnclear"   onclick="addnumber('000')">clear</button>
+                    <button id = "btn=" class = "signbtn"  onclick="answer()">=</button>
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
