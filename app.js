@@ -35,7 +35,7 @@ function addnumber(number){
 
 function answer(){
     if(str[0] == '/' || str[0] == '*'){
-        outputtext.innerHTML = "sahi no. daalBSDK";
+        outputtext.innerHTML = "enter a valid number";
     }else {
 
     let result = eval(str);
